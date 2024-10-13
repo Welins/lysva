@@ -1,0 +1,141 @@
+.footer .container {
+  padding: 35px 10px;
+}
+
+.footer {
+  background: #EDEDED;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer__block img {
+  width: 122px;
+}
+
+.footer__block span {
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--black);
+}
+
+.footer__block span::before {
+  content: '© ';
+}
+
+.footer__content {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-navigation-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.footer-navigation-top span {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 16px;
+}
+
+.footer-navigation-top svg {
+  transform: rotate(180deg);
+  transition: all 0.3s ease 0s;
+}
+
+.footer-navigation-top svg.active {
+  transform: rotate(360deg);
+}
+
+.footer-navigation-dropdown {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-navigation-dropdown li {
+  font-size: 16px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.footer-navigation-dropdown li a {
+  color: var(--black);
+  transition: color 0.3s ease 0s;
+}
+
+.footer-navigation-dropdown li a:hover {
+  color: var(--blue);
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__info a {
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--black);
+  transition: all 0.3s ease 0s;
+}
+
+.footer__social a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 768.98px) {
+  .footer__content {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 479.98px) {
+
+  .footer__container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__contacts {
+    display: none;
+  }
+
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-navigation-top {
+    justify-content: center;
+  }
+}

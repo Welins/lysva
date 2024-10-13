@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import './fonts/ProximaNova/ProximaNova-Bold.ttf';
+import './fonts/ProximaNova/ProximaNova-Regular.ttf';
+import './fonts/ProximaNova/ProximaNovaT-Thin.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

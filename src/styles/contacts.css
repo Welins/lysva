@@ -1,0 +1,95 @@
+.contacts__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--white);
+  max-width: 516px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768.98px) {
+  .contacts__text {
+    font-size: 20px;
+  }
+}
+
+.contact-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 300px;
+}
+
+.input-form {
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 20px 30px;
+}
+
+.input-form label {
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+.input-form label,
+input {
+  font-size: 24px;
+  color: var(--white);
+  line-height: 100%;
+}
+
+.input-form input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.input-form input:focus+label,
+.input-form input:not(:placeholder-shown)+label {
+  font-size: 16px;
+  top: -20%;
+  z-index: 10;
+}
+
+.policy-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.policy-form label {
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.policy-form label span {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form button {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--white);
+  padding: 20px 0;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
+}
+
+.contact-form button:hover {
+  background-color: var(--blue-hover);
+  color: var(--white);
+}
